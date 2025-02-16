@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500;700&display=swap');
+
+:root {
+    --primary-color: #2d3b29; /* Dark Green */
+    --secondary-color: #e3a72f; /* Mustard Yellow */
+    --accent-color: #f4ede6; /* Light Beige */
+    --text-dark: #1e1e1e; /* Dark Text */
+    --text-light: #ffffff; /* White */
+    --highlight-color: #d14b39; /* Reddish Accent */
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.banner-left p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.banner-right {
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+}
+
+.banner-right a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 750;
+    transition: color 0.3s ease;
+}
+
+.banner-right a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.hero p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-light);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Section Styles */
+.section-dark {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-light {
+    background-color: var(--accent-color);
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-box {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.resume-text {
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+/* Contact Page Styles */
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensure the form is centered vertically */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+/* Contact Bar Styles */
+.contact-bar {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.contact-bar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-bar a:hover {
+    text-decoration: underline;
+}
+/* Block Styles */
+.block {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    height: 300px; /* Fixed height for all blocks */
+    display: flex;
+    align-items: center;
+}
+
+.block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.block-left {
+    width: 60%;
+}
+
+.block-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 750;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.block-left p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 450;
+    color: var(--text-dark);
+}
+
+.block-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Circle Styles */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--secondary-color);
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Alternating Section Colors */
+.section-dark {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.section-dark .block-left h2,
+.section-dark .block-left p {
+    color: var(--text-light);
+}
+
+.section-light {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+}
+/* Block Hover Effect */
+.block {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    height: 300px; /* Fixed height for all blocks */
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Shadow for Light Blocks */
+.section-light:hover {
+    box-shadow: 0 4px 20px rgba(45, 59, 41, 0.3); /* Dark Green Shadow */
+}
+
+/* Shadow for Dark Blocks */
+.section-dark:hover {
+    box-shadow: 0 4px 20px rgba(227, 167, 47, 0.3); /* Mustard Yellow Shadow */
+}
+/* Circle Container */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--secondary-color);
+    position: relative; /* Required for absolute positioning of hover text */
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+
+/* Hover Text */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-light);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.circle:hover img {
+    opacity: 0.3; /* Reduce image opacity on hover */
+}
+
+.circle:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+/* Education Block Styles */
+.education-block {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-left, .education-right {
+    width: 75%;
+}
+
+/* Block Title Styles */
+.block-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Opposite Color for Titles */
+.section-dark .block-title {
+    color: var(--accent-color); /* White on Green Block */
+}
+
+.section-light .block-title {
+    color: var(--primary-color); /* Green on White Block */
+}
+
+/* Degree Description Styles */
+.degree-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Color for Degree Description Text */
+.section-dark .degree-description {
+    color: var(--secondary-color); /* Orange on Green Block */
+}
+
+.section-light .degree-description {
+    color: var(--primary-color); /* Green on White Block */
+}
+
+/* Detail Square Styles */
+.detail-square {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-square p {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* Opposite Color for Squares and Text */
+.section-dark .detail-square {
+    background-color: var(--accent-color); /* White Square on Green Block */
+}
+
+.section-dark .detail-square p {
+    color: var(--text-dark); /* Dark Text on White Square */
+}
+
+.section-light .detail-square {
+    background-color: var(--primary-color); /* Green Square on White Block */
+}
+
+.section-light .detail-square p {
+    color: var(--text-light); /* White Text on Green Square */
+}
+
+/* Misalignment Effect */
+.detail-square.top-square {
+    margin-left: 20px; /* Misalignment for Top Square */
+}
+
+.detail-square.bottom-square {
+    margin-right: 20px; /* Misalignment for Bottom Square */
+}
+
+/* Alternating Section Colors */
+.section-dark {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.section-light {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+}
+/* Masters and 12th: Name on right, details on left */
+.education-block:nth-child(odd) .education-content {
+    flex-direction: row-reverse;
+}
+
+/* Bachelors and 10th: Name on left, details on right */
+.education-block:nth-child(even) .education-content {
+    flex-direction: row;
+}
+
+/* Adjust alignment for consistent spacing */
+.education-left,
+.education-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ensure the text remains aligned */
+.block-title,
+.degree-description {
+    text-align: left;
+}
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: var(--accent-color);
+    padding: 30px; /* Increased padding for larger popup */
+    border-radius: 10px;
+    width: 90%; /* Increased width for larger popup */
+    max-width: 800px; /* Increased max-width for larger popup */
+    display: flex;
+    gap: 30px; /* Increased gap between text and image */
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjusted position for larger popup */
+    right: 15px; /* Adjusted position for larger popup */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.popup-details {
+    width: 60%; /* Text takes 60% of the popup width */
+}
+
+.popup-image {
+    width: 40%; /* Image takes 40% of the popup width */
+    text-align: center;
+}
+
+.popup-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .popup-content {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        gap: 20px;
+    }
+
+    .popup-details, .popup-image {
+        width: 100%; /* Full width for text and image on small screens */
+    }
+}
+/* Hero Section Styles */
+.hero-section {
+    background-color: var(--accent-color); /* Ensure it's light beige */
+    padding: 40px; /* Match padding with other sections */
+    border-radius: 10px; /* Consistent border radius */
+    margin: 20px 0; /* Maintain spacing between sections */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center vertically */
+    height: 600px; /* Fixed height to match other blocks */
+}
+
+/* Dark Blue Square Styles */
+.dark-blue-square {
+    width: 1400px; /* Set a width for the square */
+    height: 500px; /* Set a height for the square */
+    background-color: #000022; /* Dark blue color */
+    margin: 0 auto; /* Center the square */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Ensure consistent styles for all sections */
+.section-dark, .section-light {
+    padding: 40px; /* Consistent padding */
+    border-radius: 10px; /* Consistent border radius */
+}
+
+Maintain alternating section colors
+.section-dark {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.section-light {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+}
+
+/* Adjustments for hover effects */
+.section-light:hover {
+    box-shadow: 0 4px 20px rgba(45, 59, 41, 0.3); /* Dark Green Shadow */
+}
+
+.section-dark:hover {
+    box-shadow: 0 4px 20px rgba(227, 167, 47, 0.3); /* Mustard Yellow Shadow */
+}/* Modified Dark Blue Square Styles */
+.dark-blue-square {
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.left-part, .right-part {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.left-part {
+    resize: horizontal;
+    overflow: auto;
+    min-height: 300px;
+}
+
+.right-part {
+    resize: vertical;
+    overflow: auto;
+    min-height: 300px;
+}
+
+.left-part h3, .right-part h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.left-part p, .right-part p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Handle resizable areas */
+.left-part::-webkit-resizer,
+.right-part::-webkit-resizer {
+    background-color: var(--highlight-color);
+    border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dark-blue-square {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-part, .right-part {
+        width: 100% !important;
+        min-height: 200px;
+    }
+}
+/* Section Title Styles */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px; /* Space between title and circles */
+}
+.text-block {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color); /* Light orange background */
+    color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark); /*  text */
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--secondary-color); /* Yellow text */
+}
+.certificate-section {
+    position: relative; /* Allows absolute positioning inside */
+    text-align: center; /* Centers text inside the section */
+    padding-top: 50px; /* Adjust space inside the section */
+}
+
+.certificate-section h3 {
+    position: absolute;
+    top: 10px; /* Moves the heading further up */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    color: var(--text-light); /* Ensures readability */
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+/* Certificate Section Styles */
+.certificate-section {
+    padding: 60px 20px;
+    background-color: var(--primary-color); /* Dark green */
+    text-align: center;
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+/* White strip above the section */
+.certificate-section::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust this value to control the height of the white strip */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Height of the white strip */
+    background-color: var(--accent-color); /* White color */
+    z-index: 1; /* Ensure it appears above the section */
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.certificate-circle {
+    width: 180px;
+    height: 180px;
+    background-color: var(--secondary-color); /* Yellow */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-dark); /* Black text */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Required for pseudo-element positioning */
+    border: 5px solid transparent; /* Transparent border for hover effect */
+}
+
+/* White ring behind the yellow circle */
+.certificate-circle::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to control the size of the ring */
+    left: -10px; /* Adjust to control the size of the ring */
+    width: 200px; /* Slightly larger than the yellow circle */
+    height: 200px; /* Slightly larger than the yellow circle */
+    background-color: var(--accent-color); /* White color */
+    border-radius: 50%; /* Make it a circle */
+    z-index: -1; /* Place it behind the yellow circle */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.certificate-circle:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    border-color: var(--accent-color); /* White border on hover */
+}
+
+
+
+/* Responsive Design for Circles */
+@media (max-width: 768px) {
+    .certificate-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .certificate-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust the white ring for smaller screens */
+    .certificate-circle::before {
+        width: 140px; /* Slightly larger than the yellow circle */
+        height: 140px; /* Slightly larger than the yellow circle */
+        top: -10px;
+        left: -10px;
+    }
+}
+
+/* PROJECT PAGE */
+
+/* Full-width primary color strip */
+.primary-strip {
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--primary-color); /* Primary color */
+    padding: 10px 0;
+    text-align: left;
+}
+
+/* Text styling inside the strip */
+.strip-content {
+    width: 95%;
+    margin: 0 auto;
+    color: var(--secondary-color); /* Yellow text */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Project circles container */
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Container for each project item */
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between circle and text box */
+}
+
+/* Circle design with white ring */
+.project-circle {
+    width: 180px;
+    height: 180px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+    /* White border (ring) */
+    border: 5px solid var(--accent-color); /* Adjust thickness as needed */
+    box-shadow: 0 0 15px var(--accent-color); /* Optional: Soft glowing effect */
+}
+
+/* Hover effect */
+.project-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--secondary-color); /* Stronger glow on hover */
+}
+
+
+/* Hover effect on circles */
+.project-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Video styling inside circles */
+.project-video {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ensure video shows poster when not playing */
+.project-video:not(:hover) {
+    opacity: 1;
+}
+
+/* Text block below each circle */
+.project-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+    padding: 10px;
+    width: 140px; /* Match width with circles */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    .banner-content, .block-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-left, .block-right {
+        text-align: center;
+    }
+    .circle {
+        margin: 10px 0;
+    }
+}
+
+
+/* Intro Section Styling */
+.intro-section {
+    width: 100%;
+    background-color: var(--secondary-color); /* Adjust to your secondary color */
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative; /* Ensures borders do not affect the layout */
+}
+
+/* Adjustable Top & Bottom Bar */
+.intro-section::before,
+.intro-section::after {
+    content: "";
+    width: 100%;
+    height: var(--bar-thickness, 10px); /* Default thickness, adjustable */
+    background-color: var(--primary-color); /* Adjust bar color */
+    position: absolute;
+    left: 0;
+}
+
+.intro-section::before {
+    top: 0;
+}
+
+.intro-section::after {
+    bottom: 0;
+}
+
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+/* Left Side: Big Circle */
+.intro-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-circle {
+    width: 600px; /* Adjust size */
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color); /* Background color */
+    transition: transform 0.3s ease;
+    border: 20px solid var(--primary-color); /* Ring thickness can be adjusted */
+}
+
+.intro-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Right Side: Welcome Message */
+.intro-right {
+    flex: 2;
+    color: white;
+    opacity: 0; /* Start hidden */
+    transform: translateX(100px); /* Start off-screen */
+}
+
+
+
+.intro-right h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+.intro-right h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.intro-right p {
+    font-size: 18px;
+    line-height: 1.5;
+}

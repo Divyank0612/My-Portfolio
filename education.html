@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Banner Section -->
+  <header class="banner">
+    <div class="banner-content">
+      <div class="banner-left">
+        <h1>Your Name</h1>
+        <p>Data Enthusiast</p>
+      </div>
+      <nav class="banner-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+     <!-- Title Section -->
+  <div class="section-title">
+    <h2>My Education</h2>
+    <div class="text-block">Explore my achievements and certifications</div>
+<style>
+    .text-block {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+    }
+</style>
+  </div>
+    <!-- Dark Green Section with Yellow Circles -->
+<section class="certificate-section section-dark">
+  <h3>Certificate Section</h3>
+
+  <div class="certificate-container">
+    <a href="https://coursera.org/share/014e5a36d8f2b2dd5a716fe52fce1b34" class="certificate-circle">
+      <span> Python for Data Science</span>
+    </a>
+    <a href="https://coursera.org/share/3eb3722e25c272f29bd2a58a93ab04c3" class="certificate-circle">
+      <span>R Programming</span>
+    </a>
+    <a href="https://coursera.org/share/98fb9ddb0d3a5860113b96b43f4ea199" class="certificate-circle">
+      <span>SQL for Data Science</span>
+    </a>
+    <a href="https://coursera.org/share/50bdc6dd99fdcb504066b0c64660bb1d" class="certificate-circle">
+      <span>Trading Basics</span>
+    </a>
+    <a href="link-to-certificate-5.html" class="certificate-circle">
+      <span>Certificate 5</span>
+    </a>
+  </div>
+</section>
+
+    <!-- New White Section with Dark Blue Square -->
+<!-- In the HTML, modify the dark-blue-square section -->
+<section class="hero-section section-light clearfix">
+  <div class="hero-container">
+    <div class="dark-blue-square">
+      <div class="left-part">
+        <h3>Academic Journey</h3>
+        <p>Explore my educational milestones and achievements</p>
+      </div>
+      <div class="right-part">
+        <h3>Key Highlights</h3>
+        <p>Special accomplishments and recognitions</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Masters Block -->
+    <section class="education-block section-dark">
+      <div class="education-content">
+        <div class="education-right">
+          <h2 class="block-title">Masters</h2>
+          <p class="degree-description">Master of Science in Data Science</p>
+        </div>
+        <div class="education-left">
+          <div class="detail-square top-square" onclick="openPopup('masters')">
+            <p><strong>University:</strong> XYZ University</p>
+            <p><strong>Duration:</strong> 2021 - 2023</p>
+          </div>
+          <div class="detail-square bottom-square">
+            <p><strong>Key Skills:</strong> Machine Learning, Data Visualization, Python</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bachelors Block -->
+    <section class="education-block section-light">
+      <div class="education-content">
+        <div class="education-left">
+          <h2 class="block-title">Bachelors</h2>
+          <p class="degree-description">Bachelor of Technology in Computer Science</p>
+        </div>
+        <div class="education-right">
+          <div class="detail-square top-square" onclick="openPopup('bachelors')">
+            <p><strong>University:</strong> ABC University</p>
+            <p><strong>Duration:</strong> 2017 - 2021</p>
+          </div>
+          <div class="detail-square bottom-square">
+            <p><strong>Key Skills:</strong> Algorithms, Databases, Web Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12th Block -->
+    <section class="education-block section-dark">
+      <div class="education-content">
+        <div class="education-right">
+          <h2 class="block-title">12th Grade</h2>
+          <p class="degree-description">Higher Secondary Education</p>
+        </div>
+        <div class="education-left">
+          <div class="detail-square top-square" onclick="openPopup('12th')">
+            <p><strong>School:</strong> DEF School</p>
+            <p><strong>Duration:</strong> 2015 - 2017</p>
+          </div>
+          <div class="detail-square bottom-square">
+            <p><strong>Key Subjects:</strong> Mathematics, Physics, Chemistry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10th Block -->
+    <section class="education-block section-light">
+      <div class="education-content">
+        <div class="education-left">
+          <h2 class="block-title">10th Grade</h2>
+          <p class="degree-description">Secondary Education</p>
+        </div>
+        <div class="education-right">
+          <div class="detail-square top-square" onclick="openPopup('10th')">
+            <p><strong>School:</strong> GHI School</p>
+            <p><strong>Duration:</strong> 2013 - 2015</p>
+          </div>
+          <div class="detail-square bottom-square">
+            <p><strong>Key Subjects:</strong> Science, Mathematics, Social Studies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <div class="popup-details">
+        <h2 id="popup-title"></h2>
+        <p id="popup-description"></p>
+      </div>
+      <div class="popup-image">
+        <img id="popup-img" src="" alt="Popup Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Popup -->
+  <script src="js/popup.js"></script>
+</body>
+</html>
