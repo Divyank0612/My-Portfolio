@@ -943,30 +943,30 @@ Maintain alternating section colors
 
 /* Left Side: Big Circle */
 .intro-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.intro-circle {
-    width: 600px; /* Adjust size */
-    height: 600px;
-    border-radius: 50%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color); /* Background color */
-    transition: transform 0.3s ease;
-    border: 20px solid var(--primary-color); /* Ring thickness can be adjusted */
+    width: 100%;
+}
+
+.intro-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px; /* Adjustable */
+    height: 600px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 20px solid var(--primary-color); /* Ring */
+    overflow: hidden;
 }
 
 .intro-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
 }
+
 
 /* Right Side: Welcome Message */
 .intro-right {
